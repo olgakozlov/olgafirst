@@ -1,0 +1,50 @@
+var friends = {
+    steve: {
+        firstName:"Steve",
+        lastName: "Jobs",
+        number: "(408) 555-5555",
+        address: ['One Microsoft Way', 'Redmond', 'WA','98052']
+        },
+    bill: {
+        firstName:"Bill",
+        lastName: "Gates",
+        number: "(408) 555-5556",
+        address: ['One Infinite Loop','Cupertino', 'CA', '94444']
+        },
+    michael: {
+        firstName:"Michael",
+        lastName: "Koch",
+        number: "(408) 555-5557",
+        address: ['16 Elder Drive', 'Belmont', 'CA', '94008']
+        },
+    kath: {
+        firstName:"Kath",
+        lastName: "Makedonsky",
+        number: "(408) 555-5556",
+        address: ['1609 Countrywood Court', 'Walnut Creek', 'CA', '94598']
+        }
+};
+var list = function (friends) {
+    for(var key in friends) {console.log(key);
+    }
+};
+var search = function(name) {
+    for(var key in friends) {
+        if(friends[key].firstName === name) {console.log(
+"First Name:" + " " + friends[key].firstName +
+"\n"+
+"Last Name:" + " " + friends[key].lastName + "\n" + 
+"Number:" + " " + friends[key].number +
+"\n"+ 
+"Address:" + " " +friends[key].address[0]+
+"\n"+
+friends[key].address[1]+ "," +
+" " +
+friends[key].address[2]+
+" " +
+friends[key].address[3])
+}
+}
+}
+search("Kath");
+list(friends);
