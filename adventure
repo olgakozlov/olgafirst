@@ -1,0 +1,19 @@
+var user = prompt("Would you like a BOWL, a SANDWICH, or a PIZZA?").toUpperCase();
+switch(user) {
+    case 'BOWL':
+        var protein = prompt("Would you like to add CHICKEN or SHRIMP or NO PROTEIN?").toUpperCase();
+        if(protein==='CHICKEN' || protein=== 'SHRIMP') {console.log("Great choice!")} else {conosle.log("Okay....");}
+        break;
+    case 'SANDWICH':
+        var side = prompt("Would you like 'KALE SALAD' or 'SWEET POTATO HASH'?").toUpperCase();
+        if(side==='KALE SALAD' || side==='SWEET POTATO HASH') {console.log("Okay!")} 
+        else if(side==='KALE SALAD' && side==='SWEET POTATO HASH') {console.log("I know it's hard to decide. Both is a good choice")}
+        else
+        {console.log("I'll surprise you!");}
+        break;
+    case 'PIZZA':
+    console.log("Great!");
+        break;
+    default:
+    console.log("We have great salads! I recommend our Chicken Salad");
+}
